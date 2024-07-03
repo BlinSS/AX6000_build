@@ -18,7 +18,7 @@ source $GITHUB_WORKSPACE/functions.sh
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
 # Modify default DNS
-sed -i 's/DNS_SERVERS=""/DNS_SERVERS="1.1.1.1"/g' package/network/services/dnsmasq/files/dnsmasq.init
+# sed -i 's/DNS_SERVERS=""/DNS_SERVERS="1.1.1.1"/g' package/network/services/dnsmasq/files/dnsmasq.init
 
 
 ##
@@ -48,8 +48,8 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci-n
 sed -i "s/hostname='.*'/hostname='AX6000'/g" package/base-files/files/bin/config_generate
 
 ##加入作者信息
-sed -i "s/DISTRIB_DESCRIPTION='*.*'/DISTRIB_DESCRIPTION='OpenWRT-$(date +%Y%m%d)'/g"  package/base-files/files/etc/openwrt_release
-sed -i "s/DISTRIB_REVISION='*.*'/DISTRIB_REVISION=' By LesLie.W'/g" package/base-files/files/etc/openwrt_release
+#sed -i "s/DISTRIB_DESCRIPTION='*.*'/DISTRIB_DESCRIPTION='OpenWRT-$(date +%Y%m%d)'/g"  package/base-files/files/etc/openwrt_release
+#sed -i "s/DISTRIB_REVISION='*.*'/DISTRIB_REVISION=' By LesLie.W'/g" package/base-files/files/etc/openwrt_release
 # cp -af feeds/extraipk/patch/diy/banner-easy  package/base-files/files/etc/banner
 
 # sed -i "2iuci set istore.istore.channel='leslie_w'" package/emortal/default-settings/files/99-default-settings
