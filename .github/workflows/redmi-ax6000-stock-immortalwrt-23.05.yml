@@ -19,7 +19,7 @@ on:
       ip:
         description: 'lan ip address'
         required: true
-        default: '192.168.1.1'
+        default: '10.0.0.1'
       ssh:
         description: 'SSH connection to Actions'
         required: false
@@ -38,7 +38,7 @@ env:
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
-  LANIP: 192.168.1.1
+  LANIP: 10.0.0.1
 
 jobs:
   build_firmware:
