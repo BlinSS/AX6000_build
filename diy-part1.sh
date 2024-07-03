@@ -21,8 +21,8 @@ source $GITHUB_WORKSPACE/functions.sh
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
-echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >> feeds.conf.default
-echo 'src-git small https://github.com/kenzok8/small' >> feeds.conf.default
+#echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >> feeds.conf.default
+#echo 'src-git small https://github.com/kenzok8/small' >> feeds.conf.default
 
 # echo -e "\nsrc-git extraipk https://github.com/xiangfeidexiaohuo/extra-ipk" >> feeds.conf.default
 #cd ./package
@@ -50,7 +50,7 @@ echo 'src-git small https://github.com/kenzok8/small' >> feeds.conf.default
 #chmod +x ./clash*
 #rm -rf ./*.gz
 
-echo 'src-git messense https://github.com/messense/aliyundrive-webdav' >>feeds.conf.default
+#echo 'src-git messense https://github.com/messense/aliyundrive-webdav' >>feeds.conf.default
 
-find ./ | grep Makefile | grep mosdns | xargs rm -f
-git clone https://github.com/sbwml/luci-app-mosdns package/mosdns
+#find ./ | grep Makefile | grep mosdns | xargs rm -f
+#git clone https://github.com/sbwml/luci-app-mosdns package/mosdns
